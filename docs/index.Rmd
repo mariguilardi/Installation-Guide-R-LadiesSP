@@ -51,7 +51,7 @@ knitr::include_graphics("img/finalizar_windows.jpeg")
 
 Fonte: [Curso-R](https://www.curso-r.com/material/instalacao/)
 
-Pronto! você já tem o **R** na sua máquina!
+Pronto! Você já tem o **R** na sua máquina!
 
 ---
 ## Linux
@@ -80,7 +80,9 @@ sudo apt-get upgrade
 knitr::include_graphics("img/linux.jpeg")
 ```
 
-* Escolha a sua distribuição de Linux e siga as instruções para instalação
+* Escolha a sua distribuição de Linux e baixe o arquivo
+
+* Abra o arquivo baixado e siga as instruções para instalação
 
 ---
 ## MAC
@@ -184,7 +186,7 @@ knitr::include_graphics("img/instalandoadmwindows.jpeg")
 - Agora no terminal, vá para a pasta de Downloads. A seguir, instale o RStudio.
 
 ```{bash eval=FALSE, warning=FALSE, error=FALSE}
-cd < caminho da pasta Downloads>
+cd <caminho da pasta Downloads>
 sudo dpkg -i rstudio.*
 sudo apt-get install -f
 ```
