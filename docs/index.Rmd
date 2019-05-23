@@ -55,7 +55,26 @@ Pronto! você já tem o **R** na sua máquina!
 
 ---
 ## Linux
-* Acesse esse [link](https://cran.r-project.org//), selecione Linux e você será direcionado para uma página com a figura abaixo. 
+
+Abra uma janela de terminal e execute:
+
+```{bash eval=FALSE, warning=FALSE, error=FALSE}
+sudo apt-get install r-base r-base-dev
+```
+
+- A seguir digite sua senha e aguarde o R ser instalado
+
+- Após a instalação, é sempre indicado atualizar seu sistema. Execute no terminal:
+
+```{bash eval=FALSE, warning=FALSE, error=FALSE}
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+---
+## Linux - Distribuição Ubuntu
+
+* Para Ubuntu, uma forma alternativa de instalação é acessar este [link](https://cran.r-project.org//), selecionar Linux e você será direcionado para uma página com a figura abaixo. 
 
 ```{r echo=FALSE, fig.align='center', out.width="70%"}
 knitr::include_graphics("img/linux.jpeg")
@@ -83,6 +102,7 @@ knitr::include_graphics("img/rstudio.jpeg")
 ```
 
 * Role a tela até o final para encontrar as seguintes opções:
+
 ---
 a. Se você tiver acesso administrador, baixe a versão que está na lista de Installers for *Supported Platforms*. Em seguida a instalação será bem simples: fazer o download, abrir o instalador e seguir as instruções clicando no botão “Avançar”.
 
@@ -118,6 +138,7 @@ knitr::include_graphics("img/instalandonoadmwindows.jpeg")
 ```
 
 Fonte: [Curso-R](https://www.curso-r.com/material/instalacao/)
+
 ---
 * Clique com o botão direito neste arquivo e depois em Extrair Tudo conforme a imagem.
 
@@ -126,12 +147,14 @@ knitr::include_graphics("img/extrai.jpeg")
 ```
 
 Fonte: [Curso-R](https://www.curso-r.com/material/instalacao/)
+
 ---
 * Você verá uma tela como a imagem a seguir. Não mude nada e clique em extrair. Espere o Windows completar a extração.
 
 ```{r echo=FALSE, fig.align='center', out.width="70%"}
 knitr::include_graphics("img/pastas.jpeg")
 ```
+
 ---
 class: middle
 * Agora na pasta Downloads, a pasta que deixamos como local de extração, você terá uma pasta chamada: **RStudio-1.0.136**. Abra essa pasta e entre na subpasta com nome **bin**.
@@ -141,7 +164,7 @@ class: middle
 **Observação:**  se você excluir a pasta que extraímos, o RStudio irá parar de funcionar.
 
 ---
-## Linux
+## Linux 
 * Acesse o [link](https://www.rstudio.com/products/rstudio/download/)
 
 ```{r echo=FALSE, fig.align='center', out.width="100%"}
@@ -155,13 +178,32 @@ knitr::include_graphics("img/rstudio.jpeg")
 knitr::include_graphics("img/instalandoadmwindows.jpeg")
 ```
 
-* Escolha o seu sistema operacional e siga as instruções para instalação
+* Escolha o seu sistema operacional
+
 ---
-* Dê ok e siga as instruções que aparecerem na tela 
+- Agora no terminal, vá para a pasta de Downloads. A seguir, instale o RStudio.
+
+```{bash eval=FALSE, warning=FALSE, error=FALSE}
+cd < caminho da pasta Downloads>
+sudo dpkg -i rstudio.*
+sudo apt-get install -f
+```
+
+- Após a instalação, é sempre indicado atualizar seu sistema. Execute no terminal:
+
+```{bash eval=FALSE, warning=FALSE, error=FALSE}
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+---
+## Linux - Distribuição Ubuntu
+* Para Ubuntu, um forma de alternativa é instalar com o arquivo baixado. Abra o arquivo e siga as instruções que aparecerem na tela 
 
 ```{r echo=FALSE, fig.align='center'}
 knitr::include_graphics("img/linux_rstudio.jpeg")
 ```
+
 ---
 ## MAC
 * Acesse o [link](https://www.rstudio.com/products/rstudio/download/)
@@ -169,12 +211,14 @@ knitr::include_graphics("img/linux_rstudio.jpeg")
 ```{r echo=FALSE, fig.align='center', out.width="100%"}
 knitr::include_graphics("img/rstudio.jpeg")
 ```
+
 ---
 * Dê ok e siga as instruções que aparecerem na tela 
 
 ```{r echo=FALSE, fig.align='center', out.width="100%"}
 knitr::include_graphics("img/mac.jpeg")
 ```
+
 ---
 # Referências
 * [Curso-R](https://www.curso-r.com/material/instalacao/)
